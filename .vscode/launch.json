@@ -4,7 +4,19 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
+        {
+            "type": "java",
+            "name": "SpringbootApplication",
+            "request": "launch",
+            "mainClass": "src.main.java.org.bear.springboot.SpringbootApplication",
+            "projectName": "springboot"
+        },
+        {
+            "type": "java",
+            "name": "SpringbootApplication",
+            "request": "launch",
+            "mainClass": "org.bear.springboot.SpringbootApplication"
+        },
         {
             "type": "java",
             "name": "Current File",
