@@ -1,4 +1,4 @@
-package better;
+package main.java.better;
 
 public class ThreadJoin {
 
@@ -14,32 +14,26 @@ public class ThreadJoin {
                 }
             }
             System.out.println("t2 end");
-
         });
 
 
         Thread t1 = new Thread(() -> {
             System.out.println("t1 started");
-            for (int i = 0; i < 1; i++) {
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-            System.out.println("t2 join");
+
             try {
                 t2.join();
             } catch (InterruptedException e) {
+                throw new RuntimeException(e);
             }
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 2; i++) {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
-            System.out.println("t2 finished");
+
+            System.out.println("t1 finished");
         });
         t1.start();
         t2.start();
