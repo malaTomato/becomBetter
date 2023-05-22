@@ -20,10 +20,5 @@ public class Main {
         }
         System.out.println(System.currentTimeMillis());
         System.gc();
-
-        while (true) {
-
-        }
-
     }
 }

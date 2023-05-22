@@ -6,6 +6,37 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ThreadJoin",
+            "request": "launch",
+            "mainClass": "better.ThreadJoin"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App"
+        },
+        {
+            "type": "java",
+            "name": "ThreadJoin",
+            "request": "launch",
+            "mainClass": "ThreadJoin"
+        },
+        {
+            "type": "java",
+            "name": "ClassLoader",
+            "request": "launch",
+            "mainClass": "org.bear.ClassLoader",
+            "projectName": "jvm"
+        },
+        {
+            "type": "java",
+            "name": "DemoApplication",
+            "request": "launch",
+            "mainClass": "com.example.demo.DemoApplication"
+        },
+        {
+            "type": "java",
             "name": "SpringbootApplication",
             "request": "launch",
             "mainClass": "src.main.java.org.bear.springboot.SpringbootApplication",
@@ -44,6 +75,16 @@
             "mainClass": "org.bear.OOM",
             "projectName": "jvm",
             "vmArgs": "-Xms1536M -Xmx1536M -Xmn1024M -Xss256K "
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<demo>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.demo.DemoApplication",
+            "projectName": "demo",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
