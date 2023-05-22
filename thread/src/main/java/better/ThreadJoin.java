@@ -32,7 +32,7 @@ public class ThreadJoin {
                     e.printStackTrace();
                 }
             }
-
+            System.out.println(t2.getState());
             System.out.println("t1 finished");
         });
         t1.start();
